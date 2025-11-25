@@ -1,6 +1,7 @@
-from app.api import routes_sign
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
+
+from app.api import routes_sign
 
 app = FastAPI(
     title="Digital Signature Service",

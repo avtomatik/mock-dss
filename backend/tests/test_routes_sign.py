@@ -1,5 +1,6 @@
-from fastapi import status
 from datetime import datetime
+
+from fastapi import status
 
 
 def test_sign_endpoint(client):
