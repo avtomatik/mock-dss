@@ -9,7 +9,7 @@ cleanup() {
 
 trap cleanup SIGINT
 
-ROOT_DIR="$(realpath "$(dirname "$0")/..")"
+ROOT_DIR="$(realpath "$(dirname "$0")/../..")"
 
 cd "$ROOT_DIR/backend"
 

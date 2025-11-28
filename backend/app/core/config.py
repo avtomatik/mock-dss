@@ -20,7 +20,7 @@ class Settings(BaseSettings):
     @property
     def db_dsn(self) -> str:
         return (
-            f"postgresql://{self.DB_USER}:{self.DB_PASSWORD}@"
+            f"postgresql+psycopg://{self.DB_USER}:{self.DB_PASSWORD}@"
             f"{self.DB_HOST}:{self.DB_PORT}/{self.DB_NAME}"
         )
 
