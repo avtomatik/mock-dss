@@ -117,7 +117,6 @@ digital-signature-service/
 ├── backend/           # FastAPI backend + services + tests
 ├── frontend/          # Minimal SPA for UI interaction
 ├── docker-compose.yml # Docker setup
-├── scripts/           # Utility scripts (SQL, bash)
 └── README.md
 ```
 
