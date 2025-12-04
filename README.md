@@ -90,19 +90,19 @@ OpenAPI docs: [http://localhost:8000/docs](http://localhost:8000/docs)
 Run tests inside the backend container:
 
 ```bash
-sudo docker exec -it digital-signature-service_backend_1 uv run pytest
+sudo docker exec -it mock-dss_backend_1 uv run pytest
 ```
 
 Access PostgreSQL database:
 
 ```bash
-sudo docker exec -it digital-signature-service_db_1 psql -U postgres -d digital_signature_service
+sudo docker exec -it mock-dss_db_1 psql -U postgres -d mock_dss_db
 ```
 
-For load testing, use the separate **`locust-tests/`** project:
+For load testing, use the separate **`mock-dss-load-tests/`** project:
 
 ```bash
-cd ../locust-tests
+cd ../mock-dss-load-tests
 locust -f locustfile.py --host=http://localhost:8000
 ```
 
@@ -113,7 +113,7 @@ Locust web UI: [http://localhost:8089](http://localhost:8089)
 ## 🧱 Project Structure
 
 ```
-digital-signature-service/
+mock-dss/
 ├── backend/           # FastAPI backend + services + tests
 ├── frontend/          # Minimal SPA for UI interaction
 ├── docker-compose.yml # Docker setup

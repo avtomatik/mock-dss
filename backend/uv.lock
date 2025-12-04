@@ -124,7 +124,7 @@ wheels = [
 ]
 
 [[package]]
-name = "digital-signature-service"
+name = "mock-dss"
 version = "0.1.0"
 source = { editable = "." }
 dependencies = [

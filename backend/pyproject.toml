@@ -1,5 +1,5 @@
 [project]
-name = "digital-signature-service"
+name = "mock-dss"
 version = "0.1.0"
 description = "Toy digital signature service imitation built with FastAPI"
 requires-python = ">=3.12"
