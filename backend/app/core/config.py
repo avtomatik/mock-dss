@@ -4,13 +4,13 @@ from pydantic_settings import BaseSettings
 
 class Settings(BaseSettings):
     DB_USER: str = "postgres"
-    DB_PASSWORD: str = "mysecretpassword"
-    DB_HOST: str = "localhost"
+    DB_PASSWORD: str = "default_pass"
+    DB_HOST: str = "db"
     DB_PORT: str = "5432"
     DB_NAME: str = "digital_signature_service"
 
     POSTGRES_USER: str = "postgres"
-    POSTGRES_PASSWORD: str = "mysecretpassword"
+    POSTGRES_PASSWORD: str = "default_pass"
     POSTGRES_DB: str = "digital_signature_service"
 
     MQ_USER: str = "guest"
@@ -18,7 +18,7 @@ class Settings(BaseSettings):
     MQ_HOST: str = "rabbitmq"
     MQ_PORT: str = "5672"
 
-    REDIS_HOST: str = "localhost"
+    REDIS_HOST: str = "redis"
     REDIS_PORT: str = "6379"
     REDIS_DB: str = "0"
 
